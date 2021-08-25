@@ -27,7 +27,7 @@ module.exports = {
           {
             loader: 'url-loader',
             options: {
-              limit: 1024 * 10, // 单位：b 
+              limit: 1024 * 10, // 单位：b
               name: utils.staticPath('images/') + '[name]-[hash:4].[ext]'
             }
           }

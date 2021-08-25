@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = webpackMerge(webpackBase, {
   mode: 'production',
-  devtool: 'eval', // cheap-source-map
+  devtool: 'eval',
   module: {
     rules: [
       {
@@ -14,7 +14,7 @@ module.exports = webpackMerge(webpackBase, {
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
-            options: { publicPath: '../../' } // 公用路径调试到外层
+            options: { publicPath: '../../' } // 公用路径调试到外层，直到样式路径正确为止
           },
           { loader: 'css-loader' },
           {
