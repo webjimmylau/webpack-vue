@@ -1,5 +1,6 @@
 import todo from '@/views/todo'
 import home from '@/views/home'
+import assets from '@/views/assets'
 
 const routes = [
   {
@@ -13,6 +14,10 @@ const routes = [
   {
     path: '/home',
     component: home
+  },
+  {
+    path: '/assets',
+    component: assets
   }
 ]
 

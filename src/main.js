@@ -9,7 +9,7 @@ import store from './store'
 
 import '@/assets/fonts/iconfont.css'
 import '@/assets/css/base.css'
-import '@/assets/css/index.less'
+import '@/assets/css/common.less'
 
 new Vue({
   el: '#app',

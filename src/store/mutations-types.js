@@ -1,15 +1,11 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-import state from './state'
-import mutations from './mutations'
-import actions from './actions'
+// 添加数据
+export const DATA_ADD = 'DATA_ADD'
 
-Vue.use(Vuex)
+// 修改数据状态
+export const DATA_CHANGE_STATUS = 'DATA_CHANGE_STATUS'
 
-const store = new Vuex.Store({
-  state,
-  mutations,
-  actions
-})
+// 删除数据
+export const DATS_DELETE = 'DATS_DELETE'
 
-export default store
+// 当前状态
+export const CHANGE_STATUS = 'CHANGE_STATUS'

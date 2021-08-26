@@ -44,6 +44,18 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.(mp3|mp4)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 1,
+              name: utils.staticPath('media/') + '[name]-[hash:4].[ext]'
+            }
+          }
+        ]
       }
     ]
   },
